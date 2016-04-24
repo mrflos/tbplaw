@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Publications
-permalink: /publications/
+permalink: /en/Publications/
 ---
 
 # An exhibit of Markdown
