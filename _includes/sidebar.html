@@ -23,6 +23,7 @@
       </svg>
     </a>
     <div class="trigger">
+      <a class="page-link{% if '/' == page.url %} active{% endif %}" href="{{ site.github.url }}">Home</a>
       {% for my_page in site.pages %}
         {% if my_page.title %}
           <a class="page-link{% if my_page.url == page.url %} active{% endif %}" href="{{ my_page.url | prepend: site.github.url }}">{{ my_page.title }}</a>
