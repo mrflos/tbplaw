@@ -28,16 +28,16 @@ Ural-Invest controlled by former Bashneft CEO Ural Rakhimov is specified as a de
 <span class="newsdate">December 23, 2014</span>
 
 The government has reportedly asked Gazprom, Rosneft, Alrosa, Zarubezhneft, Kristall Production Corporation, their subsidiaries to reduce by March 1, 2015, their foreign currency reserves and to adhere a level fixed on October 1\. This is to be done pursuant to a schedule set by the Central Bank and shall feed about $1 billion into the market every day. The companies on the list would have to sell nearly all their foreign currency revenues received after October 1\. This would amount to approximately $40-$50 billion, most of it to be sold by Gazprom and Rosneft. [>>>](https://tbplaw.com/en/News/Five_major_Russian_state-owned_companies_engaged_in_export_operations_will_be_required_to_sell_foreign_currency_in_the_next_two_months "Five major Russian state-owned companies engaged in export operations will be required to sell foreign currency in the next two months")
-<!-- <ul class="post-list">
+<!-- <ul class="post-list"> -->
   {% for post in site.posts %}
-    <li>
+    <!-- <li>
       <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
       <h2>
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       </h2>
-    </li>
+    </li> -->
   {% endfor %}
-</ul> -->
+<!-- </ul> -->
 
 <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
