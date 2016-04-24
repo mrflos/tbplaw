@@ -7,50 +7,20 @@ permalink: /en/Contact_Us/
 ## **Timofeev, Vahrenwald & Partners LLP**  
 Attorneys at Law – Moscow Law Firm
 
-<table cellspacing="0" cellpadding="0" border="0" align="right">
 
+<table cellspacing="0" cellpadding="4" border="0" style="float:right">
 <tbody>
-
 <tr>
-
-<td>![](/images/pix.gif)</td>
-
-<td>
-
-<table cellspacing="0" cellpadding="4" border="0">
-
-<tbody>
-
-<tr>
-
-<td bgcolor="#eaeaea" align="center" class="time">Current local time  
-  in Moscow & Dubai    
-![](/images/pix.gif)  
+<td bgcolor="#eaeaea" align="center" class="time">
+Current local time  
+in Moscow & Dubai
 <iframe width="58" height="17" frameborder="0" src="https://freesecure.timeanddate.com/clock/i41vln5n/n166/fn14/fs11/fc630/ts1"></iframe>  
 
 Current local time  
-(European offices)  
-![](/images/pix.gif)  
+(European offices)   
 <iframe width="58" height="17" frameborder="0" src="https://freesecure.timeanddate.com/clock/i41vm4ms/n195/fn14/fs11/fc630/ts1"></iframe></td>
-
 </tr>
-
 </tbody>
-
-</table>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td colspan="2">![](/images/pix.gif)</td>
-
-</tr>
-
-</tbody>
-
 </table>
 
 ### Russia
