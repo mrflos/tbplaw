@@ -1,28 +1,47 @@
-.main-footer {
+.container {
+  position: relative;
+  margin:30px auto 0 auto;
+  width: $content-width;
+  border : 10px $white solid;
+  background: $green-color-dark;
+}
+.container:after {
+  content: ' ';
   position: absolute;
-  bottom: auto;
-  width: calc(100% - #{$sidebar-width});
+  top: -15px;
+  left: -15px;
+  right: -15px;
+  bottom: -15px;
+  background: #b2a98b;
+  border : 1px $white solid;
+  z-index: -1;
+}
+
+.main-footer {
+  //position: absolute;
+  //bottom: auto;
+  //width: calc(100% - #{$sidebar-width});
   font-size: 70%;
   background: $background-color;
   color: $brown-color-dark;
   text-align: center;
-  padding: 4px 0;
+  margin: 4px auto 14px auto;
 }
 .primary-sidebar {
   background: $green-color-dark;
   color: $grey-color-light;
-  position: fixed;
+  float: left;
   width: $sidebar-width;
-  height: 100vh;
-  top: 0;
-  left: 0;
+  //height: 100vh;
+  //top: 0;
+  //left: 0;
   text-align: center;
   a,
   a:visited {
     color: $grey-color-light;
   }
   .site-lang {
-    margin: 30px auto 10px;
+    margin: 20px auto 10px;
     font-size: 70%;
     a,
     a:visited {
@@ -36,11 +55,12 @@
 }
 .content {
   margin-left: $sidebar-width;
-  min-height: 100vh;
+  border-left: 2px $grey-color-light;
+  border-right: 2px $grey-color-light;
 }
 .site-title {
   display: block;
-  font-size: 130%;
+  font-size: 120%;
   font-weight: 300;
   line-height: 1.2em;
   letter-spacing: 2px;
@@ -159,12 +179,13 @@ $total_animation_time: $time_per_slide * $slides;
 
 
 .slider {
-  height:50vh;
+  height: 383px;
+  background-color: $grey-color-dark;
   overflow:hidden;
   position:relative;
   .photo {
     position:absolute;
-    height:50vh;
+    height: 383px;
     width:100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -209,7 +230,7 @@ $total_animation_time: $time_per_slide * $slides;
 }
 
 .post {
-  min-height: calc(100vh - 24px);
+  background: $white;
 }
 /**
  * Site footer
