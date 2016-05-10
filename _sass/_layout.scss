@@ -212,7 +212,6 @@ $total_animation_time: $time_per_slide * $slides;
 .jumbotron {
   color:$white;
   background-color: $grey_color_dark;
-  min-height:calc(50vh - 84px);
   padding: 30px;
   h1 {
     color:$white;
