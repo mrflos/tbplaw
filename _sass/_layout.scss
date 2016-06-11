@@ -2,30 +2,30 @@
   position: relative;
   margin:30px auto 0 auto;
   width: $content-width;
-  border : 10px $white solid;
+  border-top : 12px $white solid;
+  border-bottom : 12px $white solid;
+  border-left : 10px $white solid;
+  border-right : 10px $white solid;
   background: $green-color-dark;
 }
 .container:after {
   content: ' ';
   position: absolute;
-  top: -15px;
+  top: -17px;
   left: -15px;
   right: -15px;
-  bottom: -15px;
+  bottom: -17px;
   background: #b2a98b;
   border : 1px $white solid;
   z-index: -1;
 }
 
 .main-footer {
-  //position: absolute;
-  //bottom: auto;
-  //width: calc(100% - #{$sidebar-width});
   font-size: 70%;
   background: $background-color;
   color: $brown-color-dark;
   text-align: center;
-  margin: 4px auto 14px auto;
+  margin: 10px auto 30px auto;
 }
 .primary-sidebar {
   background: $green-color-dark;
@@ -41,12 +41,17 @@
     color: $grey-color-light;
   }
   .site-lang {
-    margin: 20px auto 10px;
+    margin: 16px auto 24px;
     font-size: 70%;
+    letter-spacing: 1px;
     a,
     a:visited {
       color: $brown-color-light;
-      margin: 0 4px;
+      padding: 2px 4px;
+      display: inline-block;
+    }
+    a:hover, a.active {
+      background-color: $green-bg;
     }
   }
   .contacts {
@@ -60,14 +65,14 @@
 }
 .site-title {
   display: block;
-  font-size: 120%;
+  font-size: 17px;
   font-weight: 300;
   line-height: 1.2em;
   letter-spacing: 2px;
   text-transform: uppercase;
   margin-bottom: 0;
   text-align: center;
-  padding: 20px;
+  padding: 20px 18px;
   &,
   &:visited {
     color: $brown-color-light !important;
@@ -76,43 +81,69 @@
     text-decoration: none;
   }
   small {
-    font-size: 70%;
+    font-size: 10px;
   }
   hr {
     width: 15px;
-    margin: 12px auto;
+    margin: 10px auto;
     color: $grey-color-light;
   }
   .titleextend {
-    font-size: 65%;
+    font-size: 12px;
     text-transform: none;
     line-height: 0.8em;
-    letter-spacing: 0;
-    color: $grey-color-light !important;
+    letter-spacing: 1px;
+    color: $white !important;
   }
 }
 .site-nav {
   margin: 20px 0;
+  border-bottom: 4px solid #215117;
+  .trigger {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      margin:0 5px;
+      padding: 4px 10px;
+      border-bottom: 1px dotted $green-color;
+    }
+    li:nth-of-type(1) {
+      border-top: 1px dotted $green-color;
+    }
+    li:last-of-type {
+      border-bottom: none;
+    }
+  }
   .menu-icon {
     display: none;
   }
   .page-link {
+    position: relative;
     transition: background .25s ease-in-out;
    -moz-transition: background .25s ease-in-out;
    -webkit-transition: background .25s ease-in-out;
     display: block;
-    padding: 4px 20px;
+    padding: 0 10px;
     text-align: left;
     color: $green-color-light !important;
     line-height: $base-line-height;
-    border-bottom: 1px solid $green-color;
+    border:0;
+    font-size: 12px;
     // Gaps between nav items, but not on the last one
-    &:first-child {
-      border-top: 1px solid $green-color;
-    }
     &:hover, &.active {
       background-color: $green-color;
       text-decoration: none;
+    }
+    &::after {
+      position: absolute;
+      content: " ";
+      background: url(../images/arrow.png) no-repeat top left;
+      display: block;
+      height: 5px;
+      width: 4px;
+      right: 4px;
+      top: 7px;
     }
   }
   @include media-query($on-palm) {
@@ -212,16 +243,28 @@ $total_animation_time: $time_per_slide * $slides;
 .jumbotron {
   color:$white;
   background-color: $grey_color_dark;
-  padding: 30px;
+  padding: 15px 30px;
   h1 {
     color:$white;
     border:none;
     margin:0;
+    font-size: 140%;
   }
   h2 {
     color:$white;
-    font-size: 110%;
+    font-size: 100%;
     margin:0;
+    font-weight: normal;
+  }
+  hr {
+    border: none;
+    color: #444;
+    height: 1px;
+    background-color: #444;
+    margin: 15px -30px;
+  }
+  p {
+    font-size: 90%;
   }
   .introduction {
     margin-top: 30px;

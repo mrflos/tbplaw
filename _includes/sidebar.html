@@ -1,19 +1,20 @@
 <aside class="primary-sidebar">
-  <a class="site-title" href="{{ site.github.url }}/">
-    {{ site.title }}
+  <a class="site-title" href="{{ site.url }}/{{page.lang}}">
+    {{ site.data.lang[page.lang].title }}
     <hr>
     <span class="titleextend">
-      {{ site.titleextend }}<br>
-      {{ site.titleextend2 }}
+      {{ site.data.lang[page.lang].titleextend }}<br>
+      {{ site.data.lang[page.lang].titleextend2 }}
     </span>
   </a>
   <nav class="site-lang">
-    <a href="{{ site.github.url }}">ENG</a>
-    <a href="{{ site.github.url }}">RUS</a>
-    <a href="{{ site.github.url }}">FRA</a>
-    <a href="{{ site.github.url }}">DEU</a>
-    <a href="{{ site.github.url }}">ITA</a>
+    <a class="lang-link{% if 'en' == page.lang %} active{% endif %}" href="{{ site.url }}/en">ENG</a>
+    <a class="lang-link{% if 'ru' == page.lang %} active{% endif %}" href="{{ site.url }}/ru">RUS</a>
+    <a class="lang-link{% if 'fr' == page.lang %} active{% endif %}" href="{{ site.url }}/fr">FRA</a>
+    <a class="lang-link{% if 'de' == page.lang %} active{% endif %}" href="{{ site.url }}/de">DEU</a>
+    <a class="lang-link{% if 'it' == page.lang %} active{% endif %}" href="{{ site.url }}/it">ITA</a>
   </nav>
+
   <nav class="site-nav">
     <a href="#" class="menu-icon">
       <svg viewBox="0 0 18 15">
@@ -22,20 +23,19 @@
         <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z" />
       </svg>
     </a>
-    <div class="trigger">
-      <a class="page-link{% if '/' == page.url %} active{% endif %}" href="{{ site.github.url }}">Home</a>
-      {% for my_page in site.pages %}
-        {% if my_page.title %}
-          <a class="page-link{% if my_page.url == page.url %} active{% endif %}" href="{{ my_page.url | prepend: site.github.url }}">{{ my_page.title }}</a>
+      <ul class="trigger">
+      <li><a class="page-link{% if page.layout == 'home' %} active{% endif %}" href="{{ site.url }}/{{page.lang}}">{{ site.data.lang[page.lang].home }}</a></li>
+      {% assign my_pages=site.pages | where:"lang", page.lang %}
+      {% for my_page in my_pages %}
+        {% if my_page.title and my_page.ref != "home" %}
+        <li><a class="page-link{% if my_page.url == page.url %} active{% endif %}" href="{{ my_page.url | prepend: site.url }}">{{ my_page.title }}</a></li>
         {% endif %}
       {% endfor %}
-    </div>
+    </ul>
   </nav>
 
   <div class="contacts">
-    Vereyskaya Plaza II
-    <br> 17, Vereyskaya str.
-    <br> Moscow, 121357, Russia
+    {{ site.data.lang[page.lang].address }}
     <br>
     <br> T: +7.495.943.3000
     <br> F: +7.495.943.1740

@@ -96,11 +96,15 @@ h1 {
     font-size: 180%;
     font-weight: normal;
     margin-bottom: 13px;
-    border-bottom: 3px solid $brown-color;
+    border-bottom: 4px solid $brown-color;
     line-height: 1.1em;
 }
 h2 {
-    font-size: 170%;
+    font-size: 120%;
+    color:$grey-color;
+    font-weight: bold;
+    font-family: Tahoma, Verdana, Sans-Serif;
+    margin: 1.6em 0 0.2em 0;
 }
 h3 {
     font-size: 150%;
@@ -125,18 +129,18 @@ hr {
  * Links
  */
 a {
-    color: $brand-color;
+    color: $brown-color-dark;
     text-decoration: none;
     transition: color .25s ease-in-out;
    -moz-transition: color .25s ease-in-out;
    -webkit-transition: color .25s ease-in-out;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: $brown-color-dark;
     }
 
     &:hover {
-        color: lighten($brand-color, 15%);
+        color: #a4945f;
         text-decoration: none;
     }
 }
@@ -150,7 +154,7 @@ blockquote {
     color: $grey-color;
     border-left: 4px solid $grey-color-light;
     padding-left: $spacing-unit / 2;
-    font-size: 18px;
+    font-size: $base-font-size;
     letter-spacing: -1px;
     font-style: italic;
 

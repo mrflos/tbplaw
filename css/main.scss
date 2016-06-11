@@ -8,7 +8,7 @@
 // Our variables
 $base-font-family: Tahoma, Verdana, sans-serif;
 $serif-font-family: "Times New Roman", Times, serif;
-$base-font-size:   14px;
+$base-font-size:   13px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
@@ -20,6 +20,7 @@ $white:            #fff;
 $green-color:      #324831;
 $green-color-light:#95CE92;
 $green-color-dark: #1A2F19;
+$green-bg: #255a4b;
 
 $brown-color:      #CBC4AF;
 $brown-color-light:#EDEFED;
@@ -34,8 +35,8 @@ $background-color: $brown-color;
 $brand-color:      $brown-color-dark;
 
 // Width of the layout elements
-$content-width:    763px;
-$sidebar-width:    196px;
+$content-width:    735px;
+$sidebar-width:    183px;
 
 $on-palm:          600px;
 $on-laptop:        800px;
