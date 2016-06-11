@@ -1,14 +1,11 @@
 ---
 layout: page
-title: Publications
-permalink: /en/Publications/
-lang: en
+title: Veröffentlichungen
+permalink: /de/Veröffentlichungen/
+lang: de
 ref: publications
 ---
-
-Our lawyers share their expertise through articles published in leading legal, business and scholarly journals and through TV&P newsletters (please find below list of selected publications).
-
-## Books
+## Buch
 
 INTERNATIONAL LEGAL BASICS OF USING SUBSOIL - 2007, MGIMO University textbook. 528 pages, ISBN 978-5-468-00148-6 (TV&P co-author Dr. Ivan V. Bunik).
 
@@ -42,9 +39,7 @@ Out-of-court Dispute Settlement Systems for Electronic Commerce - Legal Reports 
 
 МЕЖДУНАРОДНО-ПРАВОВОЕ ЗНАЧЕНИЕ ОДНОСТОРОННИХ ЮРИДИЧЕСКИХ АКТОВ ГОСУДАРСТВ. Москва: Наука, 1984.
 
-## Articles
-
-[A BRIEF OVERVIEW OF THE RUSSIAN LEGAL SYSTEM - THE EU-RUSSIA CENTRE REVIEW - May 2010](../../data/EURC_Review_XIV_english.pdf)
+## Artikel
 
 [ELECTRONIC CIVIL PROCEEDING IN ITALY - 4/2009 Pravo.ru Law Review](../../data/Timofeev, Vahrenwald & Partners LLP - April 2009 - Electronic civil proceeding in Italy.pdf)
 
@@ -148,9 +143,7 @@ THE EVALUATION OF DAMAGES IN ITALIAN PATENT LITIGATION, (1993) 12 European Intel
 
 "МЕЖДУНАРОДНО-ПРАВОВОЕ ОБОСНОВАНИЕ КАНАДОЙ ПРАВ НА ЕЕ АКРТИЧЕСКИЙ СЕКТОР": статья в соавторстве // Московский журнал международного права. - 2007\. - № 1.
 
-## Conferences & Seminars
-
-[11th Industrialists Conference under the auspices of the Gulf Organisation for Industrial Consulting (GOIC) and H.H. Sheikh Hamdan bin Rashid Al Maktoum, Ministry of Finance and Industry of the United Arab Emirates. Abu Dhabi, UAE. 20-21 January 2008.](../../data/11thIndConf.GOIC.Abu-Dhabi.pdf)
+## Berichte
 
 DOES THE OFFER OF AN ’ENVIRONMENT BONUS’ OF DM 1,000 FOR A CHANGE OF THE HEATING SYSTEM TO NATURAL GAS CONSTITUTE UNFAIR COMPETITION? FED. SUP. COURT OF 26.03.1998, (1999) 9 OGLTR N-67.
 
@@ -276,7 +269,7 @@ THE ADVERTISING LAW OF THE EUROPEAN UNION, speech at the New York State Bar Conf
 
 Заседание "Круглого стола" Временной комиссии Совета Федерации по национальной морской политике на тему "Морская деятельность Российской Федерации: состояние и проблемы законодательного обеспечения" - в Совете Федерации ФС РФ 23 июня 2005 г.
 
-## Book Reviews
+## Buchrezensionen
 
 LA PROPRIEDAD INTELECTUAL EN LA LEGISLACION ESPANOLA, Juana Marco Molina, Marcial Pons, Ediciones juridicas, 1995, (1997) 5 European Intellectual Property Review 269.
 
