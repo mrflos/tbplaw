@@ -74,7 +74,7 @@ h1 {
   font-size: 180%;
   font-weight: normal;
   margin-bottom: 13px;
-  height: 1.3em;
+  min-height: 1.3em;
   background: url(../images/line.jpg) no-repeat 0 1.1em;
   line-height: 1.1em; }
 
