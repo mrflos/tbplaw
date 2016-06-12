@@ -308,7 +308,7 @@ label[for="toggle"] {
   .primary-sidebar a:visited {
     color: #ADB4AD; }
   .primary-sidebar .site-lang {
-    margin: 16px auto 22px;
+    margin: 28px auto 23px;
     font-size: 10px;
     letter-spacing: 1px; }
     .primary-sidebar .site-lang a,
@@ -478,7 +478,8 @@ label[for="toggle"] {
     color: #fff;
     border: none;
     margin: 0;
-    font-size: 140%; }
+    font-size: 140%;
+    background-image: none; }
   .jumbotron h2 {
     color: #fff;
     font-size: 100%;
