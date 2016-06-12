@@ -19,11 +19,11 @@ body {
   font-feature-settings: "kern" 1;
   font-kerning: normal;
   height: 100vh; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 745px) {
     body {
       font-size: 100%;
       overflow-x: hidden; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 540px) {
     body {
       font-size: 100%;
       overflow-x: hidden; } }
@@ -166,7 +166,7 @@ pre {
   margin-left: auto;
   padding-right: 30px;
   padding-left: 30px; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 745px) {
     .wrapper {
       max-width: -webkit-calc(735px - (30px));
       max-width: calc(735px - (30px));
@@ -192,9 +192,9 @@ pre {
   .icon > svg path {
     fill: #808080; }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 540px) {
   body {
-    padding-top: 62px; } }
+    padding-top: 63px; } }
 
 .container {
   position: relative;
@@ -205,7 +205,7 @@ pre {
   border-left: 10px #fff solid;
   border-right: 10px #fff solid;
   background: #1A2F19; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 745px) {
     .container {
       width: 100%;
       border: none;
@@ -225,6 +225,17 @@ pre {
   border: 1px #fff solid;
   z-index: -1; }
 
+.container:before {
+  content: ' ';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  border-left: 4px #dadada solid; }
+  @media screen and (max-width: 745px) {
+    .container:before {
+      border: none; } }
+
 .main-footer {
   font-size: 90%;
   background: #CBC4AF;
@@ -235,7 +246,7 @@ pre {
   padding: 0;
   position: absolute;
   bottom: -38px; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 540px) {
     .main-footer {
       position: relative;
       padding: 10px 0;
@@ -247,7 +258,7 @@ pre {
 
 label[for="toggle"] {
   display: none; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 540px) {
     label[for="toggle"] {
       position: fixed;
       top: 0;
@@ -259,19 +270,14 @@ label[for="toggle"] {
       z-index: 3;
       text-align: center;
       color: #fff;
-      font-size: 18px;
       font-weight: 300;
       line-height: 1.2em;
-      letter-spacing: 2px;
       text-transform: uppercase;
-      padding: 20px 18px;
-      height: 22px; } }
-  @media screen and (max-width: 530px) {
-    label[for="toggle"] {
+      height: 23px;
       font-size: 14px;
       letter-spacing: 1px;
       padding: 20px 50px;
-      width: 80%; } }
+      width: 81%; } }
   label[for="toggle"]::before {
     height: 30px;
     width: 30px;
@@ -323,7 +329,7 @@ label[for="toggle"] {
     font-size: 12px;
     margin-top: 39px;
     color: #b8c7b7; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 540px) {
     .primary-sidebar {
       display: block;
       height: 100%;
@@ -336,7 +342,7 @@ label[for="toggle"] {
 
 .content {
   margin-left: 200px; }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 540px) {
     .content {
       margin-left: 0;
       min-height: 100%;
@@ -427,18 +433,16 @@ label[for="toggle"] {
   margin-bottom: 30px; }
 
 .slider {
-  height: 383px;
   background-color: #666;
   overflow: hidden;
   position: relative;
-  width: 100%; }
+  width: 100%;
+  height: auto; }
   .slider .photo {
     position: absolute;
-    height: 383px;
+    top: 0;
     width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    height: auto;
     animation: round 25s infinite;
     opacity: 0; }
 
@@ -447,19 +451,19 @@ label[for="toggle"] {
     opacity: 1; }
   40% {
     opacity: 0; } }
-.slider .photo:nth-child(1) {
+.slider .photo:nth-child(2) {
   animation-delay: 20s; }
 
-.slider .photo:nth-child(2) {
+.slider .photo:nth-child(3) {
   animation-delay: 15s; }
 
-.slider .photo:nth-child(3) {
+.slider .photo:nth-child(4) {
   animation-delay: 10s; }
 
-.slider .photo:nth-child(4) {
+.slider .photo:nth-child(5) {
   animation-delay: 5s; }
 
-.slider .photo:nth-child(5) {
+.slider .photo:nth-child(6) {
   animation-delay: 0s; }
 
 .time {
@@ -494,12 +498,22 @@ label[for="toggle"] {
     margin: 15px -30px; }
   .jumbotron p {
     font-size: 90%; }
-  .jumbotron .introduction {
-    margin-top: 30px; }
 
-.post {
+#banner {
+  margin-bottom: 30px; }
+
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+  display: block; }
+
+.post, .home {
   background: #fff;
   border-right: 4px solid #dadada; }
+  @media screen and (max-width: 745px) {
+    .post, .home {
+      border-right: none;
+      min-height: 100vh; } }
 
 /**
  * Site footer

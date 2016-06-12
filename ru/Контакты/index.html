@@ -81,8 +81,15 @@
 
       <main class="content">
         <article class="post">
-  <div class="banner" style="background-image:url(https://mrflos.github.io/tbplaw/images/photo_columns.jpg)"></div>
-  <!-- <img src="/images/photo_columns.jpg" style="width:100%; object-fit:cover; margin-bottom:30px;"> -->
+  <img id="banner" width="768" height="185" src="images/photo_columns.jpg" class="img-responsive">
+  <script>
+  function randomBanner() {
+    var pictures = ["columns", "lawbooks", "scales", "troof"];
+    var i = Math.floor(Math.random() * (3 + 1));
+    document.getElementById('banner').src = '/images/photo_'+pictures[i]+'.jpg';
+  }
+  randomBanner();
+  </script>
   <div class="wrapper">
     <header class="post-header">
       <h1 class="post-title">Контакты</h1>
