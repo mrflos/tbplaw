@@ -15,7 +15,7 @@
 </head>
 
 
-  <body onload="if (this.scrollHeight == this.clientHeight or this.scrollWidth == this.clientWidth) event.preventDefault();">
+  <body>
     <div class="container">
       <aside class="primary-sidebar">
   <a class="site-title" href="https://mrflos.github.io/tbplaw/de">
@@ -79,7 +79,7 @@
   <span class="label-title">Timofeev, Vahrenwald & Partners <small>LLP</small></span>
 </label>
 
-      <main class="content" onclick="if (document.body.className && new RegExp('(\\s|^)menu-opened(\\s|$)').test(document.body.className))  document.getElementById('toggle').click();">
+      <main class="content" onclick="if (document.body.className && new RegExp('(\\s|^)menu-opened(\\s|$)').test(document.body.className))  document.getElementById('toggle').click();" ontouchmove="if (document.body.className && new RegExp('(\\s|^)menu-opened(\\s|$)').test(document.body.className)) event.preventDefault();">
         <div class="home">
   <div class="slider">
     <img class="img-responsive" src="https://mrflos.github.io/tbplaw/images/001.jpg" alt="Moscow">
