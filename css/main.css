@@ -253,6 +253,7 @@ pre {
   clip: rect(0, 0, 0, 0); }
 
 label[for="toggle"] {
+  box-sizing: border-box;
   display: none; }
   @media screen and (max-width: 540px) {
     label[for="toggle"] {
@@ -273,7 +274,7 @@ label[for="toggle"] {
       font-size: 14px;
       letter-spacing: 1px;
       padding: 20px 50px;
-      width: 81%; } }
+      width: 100%; } }
   label[for="toggle"]::before {
     height: 20px;
     width: 21px;
@@ -304,7 +305,7 @@ label[for="toggle"] {
 
 .menu-opened {
   overflow: hidden; }
-  .menu-opened #toggle {
+  .menu-opened label[for="toggle"] {
     position: fixed; }
   .menu-opened .content {
     overflow: hidden;
