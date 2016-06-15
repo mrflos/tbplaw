@@ -304,6 +304,8 @@ label[for="toggle"] {
 
 .menu-opened {
   overflow: hidden; }
+  .menu-opened #toggle {
+    position: fixed; }
   .menu-opened .content {
     overflow: hidden;
     position: fixed; }
