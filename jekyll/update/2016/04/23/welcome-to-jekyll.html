@@ -63,7 +63,7 @@
   <span class="label-title"></span>
 </label>
 
-      <main class="content" onclick="if (document.body.className && new RegExp('(\\s|^)menu-opened(\\s|$)').test(document.body.className))  document.getElementById('toggle').click();">
+      <main class="content" onclick="if (document.body.className && new RegExp('(\\s|^)menu-opened(\\s|$)').test(document.body.className))  document.getElementById('toggle').click();"  onload="document.ontouchmove = function(e){ return true; }">
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
