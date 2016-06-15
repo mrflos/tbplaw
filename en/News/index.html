@@ -15,7 +15,7 @@
 </head>
 
 
-  <body onload="document.ontouchmove = function(e){ e.preventDefault(); }">
+  <body onload="if (this.scrollHeight == this.clientHeight or this.scrollWidth == this.clientWidth) event.preventDefault();">
     <div class="container">
       <aside class="primary-sidebar">
   <a class="site-title" href="https://mrflos.github.io/tbplaw/en">
@@ -79,7 +79,7 @@
   <span class="label-title">Timofeev, Vahrenwald & Partners <small>LLP</small></span>
 </label>
 
-      <main class="content" onclick="if (document.body.className && new RegExp('(\\s|^)menu-opened(\\s|$)').test(document.body.className))  document.getElementById('toggle').click();"  onload="document.ontouchmove = function(e){ return true; }">
+      <main class="content" onclick="if (document.body.className && new RegExp('(\\s|^)menu-opened(\\s|$)').test(document.body.className))  document.getElementById('toggle').click();">
         <article class="post">
   <img id="banner" width="768" height="185" src="https://mrflos.github.io/tbplaw/images/photo_columns.jpg" class="img-responsive">
   <script>

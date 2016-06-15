@@ -15,7 +15,7 @@
 </head>
 
 
-  <body onload="document.ontouchmove = function(e){ e.preventDefault(); }">
+  <body onload="if (this.scrollHeight == this.clientHeight or this.scrollWidth == this.clientWidth) event.preventDefault();">
     <div class="container">
       <aside class="primary-sidebar">
   <a class="site-title" href="https://mrflos.github.io/tbplaw/">
@@ -63,7 +63,7 @@
   <span class="label-title"></span>
 </label>
 
-      <main class="content" onclick="if (document.body.className && new RegExp('(\\s|^)menu-opened(\\s|$)').test(document.body.className))  document.getElementById('toggle').click();"  onload="document.ontouchmove = function(e){ return true; }">
+      <main class="content" onclick="if (document.body.className && new RegExp('(\\s|^)menu-opened(\\s|$)').test(document.body.className))  document.getElementById('toggle').click();">
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
