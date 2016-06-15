@@ -144,6 +144,28 @@ Tel.: +971.50.6904146</p>
 
 <p>NOTA: Si avverte che l’uso di Internet per comunicare con TV&amp;P non instaura una rapporto “avvocato-cliente” e i messaggi contenenti informazioni confidenziali o soggette a scadenza saranno considerate come non inviate.</p>
 
+<form id="mail-sent" method="post" action="https://formspree.io/contact@tbplaw.com">
+  <script>
+var hash = location.hash.replace(/^#/, '');
+if (hash === "mail-sent") document.write('<p class="success">Email sent, thank you!</p>')</script>
+
+  <p><label for="name">Nome:</label>
+<input size="32" type="text" id="name" name="name" maxlength="100" value="" required="" /></p>
+
+  <p><label for="phone">Telefono:</label>
+<input size="32" type="text" id="phone" name="phone" maxlength="100" value="" /></p>
+
+  <p><label for="email">E-mail:</label>
+<input size="32" type="email" id="email" name="email" maxlength="100" value="" required="" /></p>
+
+  <p><label for="message">Messaggio:</label><textarea cols="59" rows="9" id="message" name="message" required=""></textarea></p>
+
+  <p><button type="submit" class="btn pull-right">Invia</button>
+<input type="hidden" name="_subject" value="[tbplaw.com] Contact" />
+<input type="text" name="_gotcha" style="display:none" />
+<input type="hidden" name="_next" value="/it/Contatti/#mail-sent" /></p>
+</form>
+
     </div>
   </div>
 </article>

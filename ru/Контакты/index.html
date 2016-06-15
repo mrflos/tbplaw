@@ -133,6 +133,28 @@ Via Luigi Calamatta No.16, 00193 Roma<br />
 
 <p>УВЕДОМЛЕНИЕ: Каждый поступивший запрос будет внимательно рассмотрен при условии соблюдения требований о том, что: (1) адвокатская деятельность осуществляется на основе соглашения, заключаемого с доверителем в простой письменной форме; (2) передача информации с помощью сети Интернет не влечет за собой обязанность адвоката оказать юридическую помощь; (3) получение информации и материалы интернет-сайта не являются консультацией по юридическим вопросам.</p>
 
+<form id="mail-sent" method="post" action="https://formspree.io/contact@tbplaw.com">
+  <script>
+var hash = location.hash.replace(/^#/, '');
+if (hash === "mail-sent") document.write('<p class="success">Email sent, thank you!</p>')</script>
+
+  <p><label for="name">Ваше имя:</label>
+<input size="32" type="text" id="name" name="name" maxlength="100" value="" required="" /></p>
+
+  <p><label for="phone">Ваш телефон:</label>
+<input size="32" type="text" id="phone" name="phone" maxlength="100" value="" /></p>
+
+  <p><label for="email">Ваша электронная почта:</label>
+<input size="32" type="email" id="email" name="email" maxlength="100" value="" required="" /></p>
+
+  <p><label for="message">Ваше сообщение:</label><textarea cols="59" rows="9" id="message" name="message" required=""></textarea></p>
+
+  <p><button type="submit" class="btn pull-right">Отправить</button>
+<input type="hidden" name="_subject" value="[tbplaw.com] Contact" />
+<input type="text" name="_gotcha" style="display:none" />
+<input type="hidden" name="_next" value="/ru/Контакты/#mail-sent" /></p>
+</form>
+
     </div>
   </div>
 </article>

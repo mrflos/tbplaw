@@ -141,6 +141,28 @@ Tel.: +971.50.6904146</p>
 
 <hr />
 
+<form id="mail-sent" method="post" action="https://formspree.io/contact@tbplaw.com">
+  <script>
+var hash = location.hash.replace(/^#/, '');
+if (hash === "mail-sent") document.write('<p class="success">Email sent, thank you!</p>')</script>
+
+  <p><label for="name">Name:</label>
+<input size="32" type="text" id="name" name="name" maxlength="100" value="" required="" /></p>
+
+  <p><label for="phone">Telefon:</label>
+<input size="32" type="text" id="phone" name="phone" maxlength="100" value="" /></p>
+
+  <p><label for="email">E-Mail:</label>
+<input size="32" type="email" id="email" name="email" maxlength="100" value="" required="" /></p>
+
+  <p><label for="message">Nachricht:</label><textarea cols="59" rows="9" id="message" name="message" required=""></textarea></p>
+
+  <p><button type="submit" class="btn pull-right">Senden</button>
+<input type="hidden" name="_subject" value="[tbplaw.com] Contact" />
+<input type="text" name="_gotcha" style="display:none" />
+<input type="hidden" name="_next" value="/de/Kontakt/#mail-sent" /></p>
+</form>
+
     </div>
   </div>
 </article>

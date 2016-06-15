@@ -1,7 +1,11 @@
 /**
  * Reset some basic elements
  */
-* {
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit;
   padding: 0;
   margin: 0; }
 
@@ -176,7 +180,7 @@ pre {
 /**
  * Clearfix
  */
-.wrapper:after {
+.wrapper:after, form:after {
   content: "";
   display: table;
   clear: both; }
@@ -333,7 +337,7 @@ label[for="toggle"] {
   .primary-sidebar a:visited {
     color: #ADB4AD; }
   .primary-sidebar .site-lang {
-    margin: 21px auto 20px;
+    margin: 19px auto;
     font-size: 10px;
     letter-spacing: 1px; }
     .primary-sidebar .site-lang a,
@@ -382,7 +386,7 @@ label[for="toggle"] {
   margin-bottom: 0;
   text-align: center;
   padding: 20px 26px;
-  height: 124px; }
+  height: 150px; }
   .site-title, .site-title:visited {
     color: #EDEFED !important; }
   .site-title:hover {
@@ -403,7 +407,7 @@ label[for="toggle"] {
     color: #fff !important; }
 
 .site-nav {
-  margin: 20px 0;
+  height: 157px;
   border-bottom: 4px solid #215117; }
   .site-nav .trigger {
     list-style: none;
@@ -538,6 +542,32 @@ label[for="toggle"] {
     .post, .home {
       border-right: none;
       min-height: 100vh; } }
+
+form {
+  padding: 20px;
+  background-color: #eaeaea;
+  color: #808080;
+  font-size: 90%; }
+  form input, form textarea {
+    display: block;
+    border: 1px solid #dadada;
+    padding: 3px;
+    color: #808080;
+    width: 100%; }
+
+.btn {
+  color: #fff;
+  border: 1px solid #808080;
+  padding: 3px 20px;
+  background-color: #808080; }
+
+.success {
+  background-color: #324831;
+  color: #fff;
+  padding: 20px; }
+
+.pull-right {
+  float: right; }
 
 /**
  * Site footer
