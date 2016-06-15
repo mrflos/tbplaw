@@ -313,6 +313,8 @@ label[for="toggle"] {
     content: ' ';
     background-color: rgba(0, 0, 0, 0.6);
     z-index: 2; }
+  .menu-opened .primary-sidebar {
+    display: block; }
 
 .primary-sidebar {
   display: block;
@@ -341,7 +343,7 @@ label[for="toggle"] {
     color: #b8c7b7; }
   @media screen and (max-width: 540px) {
     .primary-sidebar {
-      display: block;
+      display: none;
       height: 100%;
       position: fixed;
       top: 0;
