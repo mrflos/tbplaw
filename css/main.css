@@ -79,8 +79,9 @@ h1 {
   font-weight: normal;
   margin-bottom: 13px;
   min-height: 1.3em;
-  background: url(../images/line.jpg) no-repeat 0 1.1em;
-  line-height: 1.1em; }
+  background: url(../images/line.jpg) no-repeat left bottom;
+  line-height: 1.1em;
+  padding-bottom: 3px; }
 
 h2 {
   font-size: 120%;
@@ -295,7 +296,7 @@ label[for="toggle"] {
   transition: left 0.2s; }
 
 #toggle:checked + label {
-  left: 200px; }
+  left: 183px; }
   #toggle:checked + label::before {
     width: 20px;
     background-size: contain;
@@ -305,7 +306,7 @@ label[for="toggle"] {
   display: none; }
 
 #toggle:checked ~ .content {
-  left: 200px; }
+  left: 183px; }
 
 .menu-opened {
   overflow: hidden; }
@@ -331,19 +332,20 @@ label[for="toggle"] {
   background: #1A2F19;
   color: #ADB4AD;
   float: left;
-  width: 200px;
+  width: 183px;
+  min-height: 590px;
   text-align: center; }
   .primary-sidebar a,
   .primary-sidebar a:visited {
     color: #ADB4AD; }
   .primary-sidebar .site-lang {
-    margin: 19px auto;
+    margin: 20px auto;
     font-size: 10px;
     letter-spacing: 1px; }
     .primary-sidebar .site-lang a,
     .primary-sidebar .site-lang a:visited {
       color: #EDEFED;
-      padding: 2px 4px;
+      padding: 2px;
       display: inline-block; }
     .primary-sidebar .site-lang a:hover, .primary-sidebar .site-lang a.active {
       background-color: #255a4b; }
@@ -363,7 +365,7 @@ label[for="toggle"] {
       z-index: 0; } }
 
 .content {
-  margin-left: 200px; }
+  margin-left: 183px; }
   @media screen and (max-width: 540px) {
     .content {
       margin-left: 0;
@@ -385,8 +387,8 @@ label[for="toggle"] {
   text-transform: uppercase;
   margin-bottom: 0;
   text-align: center;
-  padding: 20px 26px;
-  height: 150px; }
+  padding: 18px;
+  height: 160px; }
   .site-title, .site-title:visited {
     color: #EDEFED !important; }
   .site-title:hover {
@@ -432,7 +434,7 @@ label[for="toggle"] {
     color: #95CE92 !important;
     line-height: 1.4;
     border: 0;
-    font-size: 12px; }
+    font-size: 11px; }
     .site-nav .page-link:hover, .site-nav .page-link.active {
       background-color: #324831;
       text-decoration: none; }
@@ -502,6 +504,7 @@ label[for="toggle"] {
   background-color: #666;
   padding: 15px 30px; }
   .jumbotron h1 {
+    font-family: Verdana, sans-serif;
     color: #fff;
     border: none;
     margin: 0;
@@ -511,7 +514,8 @@ label[for="toggle"] {
     color: #fff;
     font-size: 100%;
     margin: 0;
-    font-weight: normal; }
+    font-weight: normal;
+    font-family: Verdana, sans-serif; }
   .jumbotron hr {
     border: none;
     color: #444;
@@ -554,6 +558,13 @@ form {
     padding: 3px;
     color: #808080;
     width: 100%; }
+
+.newsdate {
+  color: #808080;
+  font-weight: bold;
+  font-size: 90%;
+  margin-bottom: 1em;
+  display: block; }
 
 .btn {
   color: #fff;
